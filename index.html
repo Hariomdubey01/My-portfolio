@@ -194,16 +194,21 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact section">
+   <section id="contact" class="contact section">
         <h2 class="section-title">Contact Me</h2>
-        <form id="contactForm">
+
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="bef1742b-a33b-4b70-a1b4-038919632c86">
+
             <input type="text" name="name" placeholder="Name" required />
             <input type="email" name="email" placeholder="Email" required />
             <input type="tel" name="phone" placeholder="Mobile Number" required />
             <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+
             <button class="btn" type="submit">Submit</button>
         </form>
     </section>
+
 
     <!-- Footer -->
     <footer>
